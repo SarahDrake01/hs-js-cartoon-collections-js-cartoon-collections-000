@@ -15,19 +15,19 @@ dwarfRollCall(dwarves);
 function summonCaptainPlanet(planeteerCalls){              //In this function, I souved using the for loop and variable method,
   //I used the punctuation exclamation, and I used the.push method to push planeteerCalls ands return planeteerCalls in capital using the .Uppercase method
   let uppercasePlaneteerCalls = [];
-  for(let count = 0; count < planeteerCalls.length; count++){
+  for(let counter = 0; counter < planeteerCalls.length; counter++){
     let punctuation = "!"
-    uppercasePlaneteerCalls.push(`${planeteerCalls[count]}${punctuation}`.toUpperCase())
+    uppercasePlaneteerCalls.push(`${planeteerCalls[counter]}${punctuation}`.toUpperCase())
   }
   return uppercasePlaneteerCalls
 }
 
 
 function longPlaneteerCalls(words) {
-  for(let count = 0; count < words.length; count++){
+  for(let counter = 0; counter < words.length; counter++){
 //This function are sayinf if any of the calls are longer than 4 characters
 // return true, otherwise, return false.
-    if(words[count].length>4){
+    if(words[counter].length>4){
       return true
     }
   }
@@ -35,10 +35,15 @@ function longPlaneteerCalls(words) {
 }
 
 function findTheCheese (foods) {
-  for (var count = 0; count < foods.length; count++) {
+  for (var counter = 0; counter < foods.length; counter++) {
+//The initialization is let counter = 0,
+//so the loop will start counting at 0.
+//The stopping condition is counter < food.length, meaning the
+//loop will run as long as the iteration variable, counter, is less than food.length.
+//The iteration statement is counter++. This means after each loop, the value of counter will increase by 1.
 
-    if (foods[count] ===  'gouda'|| foods[count]===  'cheddar' || foods[count]==='camembert') {
-      return foods[count];     // operator || mean OR
+    if (foods[counter] ===  'gouda'|| foods[counter]===  'cheddar' || foods[counter]==='camembert') {
+      return foods[counter];     // operator || mean OR
     }
   }
   //otherwise
